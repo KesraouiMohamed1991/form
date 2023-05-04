@@ -1,0 +1,48 @@
+/* Styles for extra small devices */
+@media (max-width: 576px) {
+    .container{
+        width: 345px;
+    }
+    .three {
+        height: 25%;
+        width: 25%;
+        top: 280px;
+        right: 33%;
+    }
+}
+/* Styles for small devices and up */
+@media (max-width: 767px) {
+.container {
+        width: 580px;
+        .form {
+                width: 100px;
+                height: 500px;
+                background-color: crimson;
+            }
+    }
+}
+
+@media (min-width: 768px) {
+.container {
+        width: 650px;
+        .form {
+                width: 500px;
+                height: 500px;
+            }
+    }
+         
+}
+
+/* Styles for large devices and up */
+@media (min-width: 992px) {
+.container {
+        width: 980px;
+    }
+}
+
+/* Styles for extra large devices and up */
+@media (min-width: 1200px) {
+.container {
+        width: 1280;
+    }
+}

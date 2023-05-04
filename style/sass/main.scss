@@ -1,0 +1,115 @@
+@use './extra/reset';
+@use './extra/media';
+
+$primary-color: rgb(34, 7, 40);
+
+body {
+    font-family: Grotta-Medium;
+    background-color: $primary-color;
+    position: relative;
+    overflow: hidden;
+
+    .container {
+        padding: 0 15px;
+        margin: 0 auto;
+        height: 100vh;
+
+        section {
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .span {
+                border-radius: 50%;
+                position: absolute;
+                background: linear-gradient(90deg, rgba(26, 56, 157, 1) 0%, rgba(205, 63, 219, 1) 100%);
+                // border: 1px solid black;
+                box-shadow: 1px 2px 12px rgb(103, 95, 95);
+            }
+
+            .one {
+                height: 27vh;
+                width: 27vh;
+                top: 80px;
+                left: 33%;
+            }
+
+            .two {
+                height: 10vh;
+                width: 10vh;
+                right: 33%;
+            }
+
+            .three {
+                height: 25vh;
+                width: 25vh;
+                top: 480px;
+                right: 33%;
+            }
+
+            .form {
+                width: 60%;
+                height: 60%;
+                background-color: rgba(246, 248, 248, 0.015);
+                z-index: 2;
+                backdrop-filter: blur(8px);
+                border: 3px solid rgba(212, 206, 206, 0.442);
+                border-radius: 22px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-content: center;
+                color: rgba(255, 255, 255, 0.285);
+                align-items: center;
+
+                h1 {
+                color: rgba(215, 211, 211, 0.615);
+                font-size: 1.5rem;
+                height: 80px;
+                width: 80%;
+                text-align: center;
+                text-transform: capitalize;
+                }
+
+                input {
+                background-color: transparent;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid white;
+                height: 3rem;
+                width: 60%;
+                font-size: 1rem;
+                color: rgb(195, 167, 194);
+                margin-bottom: 2rem;
+
+                   
+                    &::placeholder {
+                font-size: 22px;
+                color: rgb(195, 167, 194);
+                width: 40%;
+                padding: 10px;
+                    }
+                }
+    
+                button {
+                width: 60%;
+                height: 50px;
+                border-radius: 12px;
+                outline: none;
+                border: none;
+                color: black;
+                font-size: 26px;
+                text-transform: capitalize;
+                background-color: rgb(120, 74, 121);
+                     }
+    
+            }
+        }
+    }
+        
+}
+
+
+
